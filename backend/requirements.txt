@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+torch
+transformers
+sentencepiece
+git+https://github.com/openai/whisper.git
