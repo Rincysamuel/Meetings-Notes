@@ -25,3 +25,7 @@ async def process_audio(file: UploadFile = File(...)):
         "summary": summary,
         "action_items": action_items
     }
+if __name__ == "__main__":
+    import uvicorn
+    print("Starting FastAPI server...")
+    uvicorn.run("backend.main:app", host="127.0.0.1", port=8000, reload=True)
